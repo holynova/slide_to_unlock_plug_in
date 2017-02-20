@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <link href="http://statics.1024tools.com/css/markdown/github.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css" media="screen">
     html {
+        font-family: Microsoft YaHei, Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
         font-size: 14px;
     }
     
     .wrapper {
-        width: 60%;
-        margin: 0 auto;
+        /*background-color: #f7f7f7;*/
+        padding: 1rem 10%;
+        margin: 2rem auto;
+        min-width: 300px;
+        max-width: 1200px;
+        width: 70%;
     }
     
     .bar {
@@ -50,19 +56,17 @@
         <h2 id="-">使用方法</h2>
         <ol>
             <li>引入插件文件</li>
-        </ol>
-        <pre><code class="lang-javascript">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;jquery.slide_to_unlock.css&quot;&gt; 
+            <pre><code class="lang-javascript">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;jquery.slide_to_unlock.css&quot;&gt; 
 &lt;script src=&#39;jquery.slide_to_unlock.js&#39;&gt;&lt;/script&gt;
 </code></pre>
-        <ol>
             <li>创建一个div,作为容器,比如:<pre><code>&lt;div id = &#39;foo&#39;&gt;  
 &lt;/div&gt;
 </code></pre></li>
             <li>在脚本中初始化</li>
-        </ol>
-        <pre><code>var $container = $(&#39;#foo&#39;);
+            <pre><code>var $container = $(&#39;#foo&#39;);
 $container.slideToUnlock(options);
 </code></pre>
+        </ol>
         <p>其中options为可选参数,有默认值 options参数列表
         </p>
         <h2 id="-">参数列表</h2>
